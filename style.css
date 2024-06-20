@@ -1,0 +1,218 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Navigation Bar */
+.navs {
+    width: 100%;
+    background-color: #0c3b5f;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+.logo {
+    width: 30%;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.logo h1 {
+    font-weight: 100;
+}
+
+.nav-links {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links ul a li {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0px 15px;
+    color: white;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.fa-user {
+    margin-right: 5px;
+}
+
+.fa-bars {
+    display: none;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+
+
+
+@media (max-width:929px) {
+    .nav-links ul {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+
+    }
+
+
+}
+
+
+/* achieving part */
+
+.heropart{
+    background-image: url(./aerial-shot-mountains-with-dark-blue-sky.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 400px;
+}
+
+.achievingbox{
+    text-align: center;
+    padding: 30px 0px;
+    background-color: white;
+}
+.achievingbox h1{
+    font-size: 55px;
+    font-weight: 400;
+    padding: 30px 0px;
+    color: #021b2f;
+}
+
+.buttons{
+    padding: 15px 40px;
+    background-color: transparent;
+    color: #0c3b5f;
+    border: 1px solid #0c3b5f;
+    transition: all 0.5s ease;
+}
+.buttons:hover{
+    background-color: #0c3b5f;
+    color: white;
+    border: 1px solid #0c3b5f;
+}
+
+
+/* services part */
+
+.services{
+    padding: 150px 0px;
+}
+
+.services .row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services .row .col-lg-3{
+    text-align: center;
+    padding: 40px 20px;
+}
+.services .row .col-lg-3 h1{
+    font-weight: 400;
+}
+
+.services .row .col-lg-3 p{
+    padding: 30px 0px;
+}
+
+
+/* about section */
+.mountain{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    padding: 150px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.mountain::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(./aerial-shot-mountains-with-dark-blue-sky.jpg);
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.mountain .col-lg-6{
+    text-align: center;
+}
+
+.mountain .col-lg-6 p{
+    padding: 50px 0px;
+}
+/* our clients */
+.ourclient{
+    padding: 150px 0px;
+    background-color:white;
+
+}
+.ourclient .row h1{
+    padding-bottom:150px;
+    font-size: 40px;
+    font-weight: 100px;
+}
+.ourclient .row{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ourclient .row .img1{
+background-image: url(./apple.jpg);
+background-size: cover;
+background-position: center;
+height: 200px;
+}
+.ourclient .row .img3{
+background-image: url(./google.jpg);
+background-size: cover;
+background-position: center;
+height: 200px;
+
+}
+.ourclient .row .img4{
+background-image: url(./samsung.jpg);
+background-size: cover;
+background-position: center;
+height: 200px;
+}
+
+@media (max-width: 800px){
+    .ourclient .row{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* testimonials parts */
+.testimonials{
+    padding: 30px 0px;
+    background-color:rgba(255, 192, 203, 0.21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.testimonials .ctnt{
+    padding: 100px 0px;
+    text-align: center;
+}
+.testimonials .ctnt h2{
+    padding-bottom: 50px;
+}
